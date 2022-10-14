@@ -25,5 +25,8 @@ switch($params[0]){
                 $id = $params[1];
                 $librosController -> getLibroInd($id);
                 break;
-        
+        case 'librosporgenero':
+                $id = $params[1];
+                $librosController -> getLibrosByGenero($id);
+                break;
 }

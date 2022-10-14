@@ -18,6 +18,11 @@ class LibrosController{
 
     public function getLibroInd($id){
         $libro = $this -> model ->getLibroInd($id);
-        $this -> view -> ShowInd($libro);
+        $this -> view -> showInd($libro);
+    }
+
+    public function getLibrosByGenero($id){
+        $librosGenero = $this -> model -> getLibrosByGenero($id);
+        $this -> view -> showAll($librosGenero);
     }
 }

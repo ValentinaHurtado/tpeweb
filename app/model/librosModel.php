@@ -22,9 +22,9 @@ class LibrosModel{
 
     public function getLibrosByGenero($id){
         $query = $this -> db -> prepare("SELECT * FROM libros WHERE generos_fk=?");
-        $query -> execute($id);
-        $libro = $query->fetchAll(PDO::FETCH_OBJ);
-        return $libro;
+        $query -> execute([$id]);
+        $librosGenero = $query->fetchAll(PDO::FETCH_OBJ);
+        return $librosGenero;
     }
 
     public function insertLibro($libro, $autores, $año, $precio, $genero){

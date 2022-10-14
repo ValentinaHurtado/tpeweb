@@ -17,4 +17,5 @@ class LibrosView{
         $this -> smarty -> display('detalleslibro.tpl');
     }
 
+   
 }
