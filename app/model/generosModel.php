@@ -13,5 +13,11 @@ class GenerosModel{
         return $generos;
     }
     
+    public function getGenById($id){
+        $query = $this -> db -> prepare("SELECT * FROM generos WHERE id_generos=?");
+        $query -> execute([$id]);
+        $genero = $query -> fetch(PDO::FETCH_OBJ);
+        return $genero;
+    } 
 
 }

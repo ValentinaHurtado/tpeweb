@@ -12,10 +12,15 @@ class LibrosView{
         $this -> smarty -> display('libros.tpl');
     }
 
-    public function showInd($libro){
+    public function showInd($libro, $genero){
         $this -> smarty -> assign('libro', $libro);
+        $this -> smarty -> assign('genero', $genero);
         $this -> smarty -> display('detalleslibro.tpl');
     }
 
-   
+    public function showByGenero($librosgen, $generoPart){
+        $this -> smarty -> assign('librosgen', $librosgen);
+        $this -> smarty -> assign('generoPart', $generoPart);
+        $this -> smarty -> display('librosporgenero.tpl');
+    }
 }

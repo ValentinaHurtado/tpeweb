@@ -2,13 +2,13 @@
 <table>
     <thead>
         <th>Libro</th>
-        <th>Detalles</th>
+        <th>Genero<a href='generos'>(ver lista generos)</a></th>
     </thead>
     <tbody>
         {foreach from=$libros item=libro}
             <tr>
-                <th>{$libro->Titulo}</th>
-                <th><a href='detalleslibro/{$libro->Id_libros}'>Mostrar detalles</a></th>
+                <th>"<a href='detalleslibro/{$libro->Id_libros}'>{$libro->Titulo}</a>", {$libro->Autores}</th>
+                <th>{$libro->Generos_fk}</th>
             </tr>
         {/foreach}
     </tbody>
