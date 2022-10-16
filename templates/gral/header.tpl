@@ -15,3 +15,8 @@
 
 <body>
 <header><h1>Libreria</h1></header>
+{if !isset($smarty.session.USER_ID)}
+    <a href="login">Login</a>
+    {else}
+    <a href="logout">Logout</a>
+{/if}

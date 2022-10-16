@@ -12,7 +12,7 @@ class LibrosView{
         $this -> smarty -> display('libros.tpl');
     }
 
-    public function showInd($libro, $genero){
+    public function showLibroInd($libro, $genero){
         $this -> smarty -> assign('libro', $libro);
         $this -> smarty -> assign('genero', $genero);
         $this -> smarty -> display('detalleslibro.tpl');
@@ -22,5 +22,16 @@ class LibrosView{
         $this -> smarty -> assign('librosgen', $librosgen);
         $this -> smarty -> assign('generoPart', $generoPart);
         $this -> smarty -> display('librosporgenero.tpl');
+    }
+
+    public function showFormAdd($libros){
+        $this -> smarty -> assign('generos', $libros);
+        $this -> smarty -> display ('forms/formaddlibro.tpl');
+    }
+
+    public function showFormEdit($libro, $generos){
+        $this -> smarty -> assign('libro', $libro);
+        $this -> smarty -> assign('generos', $generos);
+        $this -> smarty -> display('forms/formeditlibro.tpl');
     }
 }
