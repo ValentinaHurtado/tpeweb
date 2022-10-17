@@ -88,4 +88,7 @@ switch($params[0]){
                 $librosController = new LibrosController();
                 $librosController -> editLibro();
                 break;
+        default:
+                echo('404 page not found');
+                break;
 }

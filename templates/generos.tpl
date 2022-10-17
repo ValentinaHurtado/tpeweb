@@ -1,6 +1,6 @@
 {include file='gral/header.tpl'}
-<table>
-    <thead>
+<table class="table table-striped-columns">
+    <thead class="text-center">
         <th>Genero</th>
         <th>Descripcion</th>
         <th>Libros</th>
@@ -8,27 +8,27 @@
             <th>Cambios</th>
         {/if}
     </thead>
-    <tbody>
+    <tbody class="text-center">
         {foreach from=$generos item=genero}
             <tr>
-                <th>{$genero->Genero}</th>
-                <th>{$genero->Descripcion}</th>
-                <th><a href='librosporgenero/{$genero->Id_generos}'>Ver libros de {$genero->Genero}</a></th>
-                {if !isset($smarty.session.USER_ID)}
+                <th class="fw-normal">{$genero->Genero}</th>
+                <th class="fw-normal">{$genero->Descripcion}</th>
+                <th class="fw-normal"><a class="link-dark" href='librosporgenero/{$genero->Id_generos}'>Ver libros de {$genero->Genero}</a></th>
+                {if isset($smarty.session.USER_ID)}
                     <th>
-                        <a href="deletegenero/{$genero->Id_generos}" type="button">Eliminar</a>
-                        <a href="editgenero/{$genero->Id_generos}" type="button">Modificar</a>
+                        <a class="link-warning" href="formeditgenero/{$genero->Id_generos}" type="button">Editar</a>
+                        <a class="link-danger" href="deletegenero/{$genero->Id_generos}" type="button">Eliminar</a>
                     </th>
                 {/if}
             </tr>
         {/foreach}
     </tbody>
-    <tfoot>
-        {if !isset($smarty.session.USER_ID)}
+    <tfoot class="text-center">
+        {if isset($smarty.session.USER_ID)}
             <th>
-                <a href="addgenero" type="button">Agregar un nuevo genero</a>
+                <a class="link-success" href="addgenero" type="button">Agregar un nuevo genero</a>
             </th>
         {/if}
-    </tfoot
+    </tfoot>
 </table>
 {include file='gral/footer.tpl'}
