@@ -40,7 +40,13 @@ class LibrosController{
             $libro -> Generos_fk = $this -> genModel -> getGenById($libro->Generos_fk)->Genero;
             $generoPart = $libro->Generos_fk;
         }
-        $this -> view -> showByGenero($librosGenero, $generoPart);
+        if(empty($libro)){
+            $this -> view -> showByGenero($librosGenero=null, $generoPart=null,
+            "No hay libros pertenecientes a este genero");
+        }
+        else{
+            $this -> view -> showByGenero($librosGenero, $generoPart, $error=null);
+        }
     }
 
     public function checkAdmin(){
