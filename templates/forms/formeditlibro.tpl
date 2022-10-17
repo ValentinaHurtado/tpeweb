@@ -6,22 +6,22 @@
 
     <div class="my-3 ms-4">
         <label for="titulo">Editar titulo:</label>
-        <input value="{$libro->Titulo}" type="text" name="titulo">
+        <input required value="{$libro->Titulo}" type="text" name="titulo">
     </div>
 
     <div class="my-3 ms-4">
         <label for="autores">Editar autores:</label>
-        <input value="{$libro->Autores}" type="text" name="autores">
+        <input required value="{$libro->Autores}" type="text" name="autores">
     </div>
 
     <div class="my-3 ms-4">
         <label for="anio">Editar año de publicacion:</label>
-        <input value="{$libro->Anio}" type="number" name="anio">
+        <input required value="{$libro->Anio}" type="number" name="anio">
     </div>
 
     <div class="my-3 ms-4">
         <label for="precio">Modificar descripcion del genero:</label>
-        <input value="{$libro->Precio}" type="number" name="precio">
+        <input required value="{$libro->Precio}" type="number" name="precio">
     </div>
 
     <div class="my-3 ms-4">

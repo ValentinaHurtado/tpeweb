@@ -34,7 +34,7 @@ switch($params[0]){
                 $generosController = new GenerosController();
                 $generosController -> getAll();
                 break;
-        case 'detalleslibro':
+        case 'libro':
                 $librosController = new LibrosController();
                 $id = $params[1];
                 $librosController -> getLibroInd($id);

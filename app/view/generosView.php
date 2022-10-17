@@ -6,8 +6,9 @@ class GenerosView{
         $this->smarty = new Smarty();
     }
 
-    public function showAll($generos){
+    public function showAll($generos, $error){
         $this -> smarty -> assign('generos', $generos);
+        $this -> smarty -> assign("error", $error);
         $this -> smarty -> display('generos.tpl');
     }
 

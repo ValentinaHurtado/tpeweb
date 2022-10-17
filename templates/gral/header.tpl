@@ -18,7 +18,7 @@
 <header class="navbar navbar-dark bg-primary">
   <div class="container-fluid">
   
-    <h1 class="navbar-brand"><a href="" class="link-light" >Libreria</a></h1>
+    <h1 class="navbar-brand"><a href="libreria" class="link-light" >Libreria</a></h1>
     
     {if !isset($smarty.session.USER_ID)}
       <a class="link-light" class="nav-item" href="login">Login</a>

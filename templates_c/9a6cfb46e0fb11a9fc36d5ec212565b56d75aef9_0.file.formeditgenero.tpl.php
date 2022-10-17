@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-10-17 01:30:48
+/* Smarty version 4.2.1, created on 2022-10-17 05:37:28
   from 'C:\xampp\htdocs\proyect\tpe\templates\forms\formeditgenero.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_634c9428733234_95274831',
+  'unifunc' => 'content_634ccdf89cd588_32344510',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9a6cfb46e0fb11a9fc36d5ec212565b56d75aef9' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyect\\tpe\\templates\\forms\\formeditgenero.tpl',
-      1 => 1665963029,
+      1 => 1665977208,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:gral/footer.tpl' => 1,
   ),
 ),false)) {
-function content_634c9428733234_95274831 (Smarty_Internal_Template $_smarty_tpl) {
+function content_634ccdf89cd588_32344510 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:gral/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -32,13 +32,13 @@ $_smarty_tpl->_subTemplateRender('file:gral/header.tpl', $_smarty_tpl->cache_id,
 
     <div class="my-3 ms-4">
         <label for="genero">Editar nombre:</label>
-        <input value="<?php echo $_smarty_tpl->tpl_vars['genero']->value->Genero;?>
+        <input required value="<?php echo $_smarty_tpl->tpl_vars['genero']->value->Genero;?>
 " type="text" name="genero">
     </div>
 
     <div class="my-3 ms-4">
         <label for="descripcion">Editar descripcion del genero:</label>
-        <input value="<?php echo $_smarty_tpl->tpl_vars['genero']->value->Descripcion;?>
+        <input required value="<?php echo $_smarty_tpl->tpl_vars['genero']->value->Descripcion;?>
 " type="text" name="descripcion">
     </div>
 

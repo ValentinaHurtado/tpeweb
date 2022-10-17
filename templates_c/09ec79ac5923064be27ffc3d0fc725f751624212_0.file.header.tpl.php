@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-10-17 01:59:16
+/* Smarty version 4.2.1, created on 2022-10-17 02:56:14
   from 'C:\xampp\htdocs\proyect\tpe\templates\gral\header.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_634c9ad4bbd553_62311900',
+  'unifunc' => 'content_634ca82ed42234_09927709',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '09ec79ac5923064be27ffc3d0fc725f751624212' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyect\\tpe\\templates\\gral\\header.tpl',
-      1 => 1665964000,
+      1 => 1665968171,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_634c9ad4bbd553_62311900 (Smarty_Internal_Template $_smarty_tpl) {
+function content_634ca82ed42234_09927709 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -42,7 +42,7 @@ function content_634c9ad4bbd553_62311900 (Smarty_Internal_Template $_smarty_tpl)
 <header class="navbar navbar-dark bg-primary">
   <div class="container-fluid">
   
-    <h1 class="navbar-brand"><a href="" class="link-light" >Libreria</a></h1>
+    <h1 class="navbar-brand"><a href="libreria" class="link-light" >Libreria</a></h1>
     
     <?php if (!(isset($_SESSION['USER_ID']))) {?>
       <a class="link-light" class="nav-item" href="login">Login</a>

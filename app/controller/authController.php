@@ -17,9 +17,10 @@ class AuthController{
     public function validateUser(){
         $email = $_POST['email'];
         $password = $_POST['password'];
+
         $user = $this -> model -> getUserByEmail($email);
 
-        if($user && password_verify($password, $user->password)){
+        if($user && password_verify($password, $user->Password)){
             session_start();
             $_SESSION['USER_ID']=$user->Id_user;
             $_SESSION['USER_EMAIL']=$user->Email;
@@ -27,7 +28,7 @@ class AuthController{
 
             header("Location: ". BASE_URL);
         }else{
-            $this -> view -> showFormLogin("El usuario o contraseña es invalido");
+            $this -> view -> showFormLogin("El mail o contraseña ingresado es invalido");
         }
     }
 

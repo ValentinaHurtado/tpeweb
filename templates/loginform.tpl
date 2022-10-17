@@ -13,7 +13,7 @@
     </div>
     
     {if $error} 
-        <div class="mt-3">
+        <div class="alert alert-danger">
             {$error}
         </div>
     {/if}

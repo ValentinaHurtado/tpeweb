@@ -6,12 +6,12 @@
 
     <div class="my-3 ms-4">
         <label for="genero">Editar nombre:</label>
-        <input value="{$genero->Genero}" type="text" name="genero">
+        <input required value="{$genero->Genero}" type="text" name="genero">
     </div>
 
     <div class="my-3 ms-4">
         <label for="descripcion">Editar descripcion del genero:</label>
-        <input value="{$genero->Descripcion}" type="text" name="descripcion">
+        <input required value="{$genero->Descripcion}" type="text" name="descripcion">
     </div>
 
         <input value="{$genero->Id_generos}" type="hidden" name="id_generos">

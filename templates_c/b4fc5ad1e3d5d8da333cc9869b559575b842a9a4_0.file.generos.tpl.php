@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-10-17 01:59:16
+/* Smarty version 4.2.1, created on 2022-10-17 05:23:14
   from 'C:\xampp\htdocs\proyect\tpe\templates\generos.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_634c9ad4a3dd64_30298692',
+  'unifunc' => 'content_634ccaa272c093_92165022',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b4fc5ad1e3d5d8da333cc9869b559575b842a9a4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyect\\tpe\\templates\\generos.tpl',
-      1 => 1665964742,
+      1 => 1665976984,
       2 => 'file',
     ),
   ),
@@ -22,9 +22,17 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:gral/footer.tpl' => 1,
   ),
 ),false)) {
-function content_634c9ad4a3dd64_30298692 (Smarty_Internal_Template $_smarty_tpl) {
+function content_634ccaa272c093_92165022 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:gral/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
+
+<?php if ($_smarty_tpl->tpl_vars['error']->value) {?> 
+        <div class="alert alert-danger">
+            <?php echo $_smarty_tpl->tpl_vars['error']->value;?>
+
+        </div>
+<?php }?>
+
 <table class="table table-striped-columns">
     <thead class="text-center">
         <th>Genero</th>

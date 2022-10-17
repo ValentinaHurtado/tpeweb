@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-10-17 01:45:42
+/* Smarty version 4.2.1, created on 2022-10-17 05:27:50
   from 'C:\xampp\htdocs\proyect\tpe\templates\loginform.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_634c97a62815d5_28433118',
+  'unifunc' => 'content_634ccbb6d24935_43929956',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'bbfcad44aa6530a0c7e6956d428fa71d12be8802' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyect\\tpe\\templates\\loginform.tpl',
-      1 => 1665963444,
+      1 => 1665977100,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:gral/footer.tpl' => 1,
   ),
 ),false)) {
-function content_634c97a62815d5_28433118 (Smarty_Internal_Template $_smarty_tpl) {
+function content_634ccbb6d24935_43929956 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:gral/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 <form method="POST" action="validate">
@@ -39,7 +39,7 @@ $_smarty_tpl->_subTemplateRender('file:gral/header.tpl', $_smarty_tpl->cache_id,
     </div>
     
     <?php if ($_smarty_tpl->tpl_vars['error']->value) {?> 
-        <div class="mt-3">
+        <div class="alert alert-danger">
             <?php echo $_smarty_tpl->tpl_vars['error']->value;?>
 
         </div>

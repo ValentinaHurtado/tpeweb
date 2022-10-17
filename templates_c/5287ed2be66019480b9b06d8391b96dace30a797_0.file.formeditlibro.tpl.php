@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.2.1, created on 2022-10-17 01:30:42
+/* Smarty version 4.2.1, created on 2022-10-17 05:27:27
   from 'C:\xampp\htdocs\proyect\tpe\templates\forms\formeditlibro.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.2.1',
-  'unifunc' => 'content_634c94221c77f1_25206977',
+  'unifunc' => 'content_634ccb9f2814e3_41733106',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '5287ed2be66019480b9b06d8391b96dace30a797' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyect\\tpe\\templates\\forms\\formeditlibro.tpl',
-      1 => 1665963035,
+      1 => 1665977235,
       2 => 'file',
     ),
   ),
@@ -22,7 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
     'file:gral/footer.tpl' => 1,
   ),
 ),false)) {
-function content_634c94221c77f1_25206977 (Smarty_Internal_Template $_smarty_tpl) {
+function content_634ccb9f2814e3_41733106 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_subTemplateRender('file:gral/header.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, $_smarty_tpl->cache_lifetime, array(), 0, false);
 ?>
 
@@ -32,25 +32,25 @@ $_smarty_tpl->_subTemplateRender('file:gral/header.tpl', $_smarty_tpl->cache_id,
 
     <div class="my-3 ms-4">
         <label for="titulo">Editar titulo:</label>
-        <input value="<?php echo $_smarty_tpl->tpl_vars['libro']->value->Titulo;?>
+        <input required value="<?php echo $_smarty_tpl->tpl_vars['libro']->value->Titulo;?>
 " type="text" name="titulo">
     </div>
 
     <div class="my-3 ms-4">
         <label for="autores">Editar autores:</label>
-        <input value="<?php echo $_smarty_tpl->tpl_vars['libro']->value->Autores;?>
+        <input required value="<?php echo $_smarty_tpl->tpl_vars['libro']->value->Autores;?>
 " type="text" name="autores">
     </div>
 
     <div class="my-3 ms-4">
         <label for="anio">Editar año de publicacion:</label>
-        <input value="<?php echo $_smarty_tpl->tpl_vars['libro']->value->Anio;?>
+        <input required value="<?php echo $_smarty_tpl->tpl_vars['libro']->value->Anio;?>
 " type="number" name="anio">
     </div>
 
     <div class="my-3 ms-4">
         <label for="precio">Modificar descripcion del genero:</label>
-        <input value="<?php echo $_smarty_tpl->tpl_vars['libro']->value->Precio;?>
+        <input required value="<?php echo $_smarty_tpl->tpl_vars['libro']->value->Precio;?>
 " type="number" name="precio">
     </div>
 

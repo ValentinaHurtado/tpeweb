@@ -13,9 +13,10 @@ class LibrosController{
         $this -> genModel = new GenerosModel();
         $this -> model = new LibrosModel();
         $this -> view = new LibrosView();
-
-        $authHelper = new AuthHelper();
-        $authHelper -> checkLoggedIn();
+        if (session_status() != PHP_SESSION_ACTIVE) {
+            session_start();
+        } 
+        
     }
 
     public function getAll(){
@@ -42,12 +43,19 @@ class LibrosController{
         $this -> view -> showByGenero($librosGenero, $generoPart);
     }
 
+    public function checkAdmin(){
+        $authHelper = new AuthHelper();
+        $authHelper -> checkLoggedIn();
+    }
+
     public function ShowFormAdd(){
+        $this -> checkAdmin();
         $generos = $this -> genModel -> getAll();
         $this -> view -> showFormAdd($generos);
     }
 
     public function addLibro(){
+        $this -> checkAdmin();
         $titulo = $_POST['titulo'];
         $autores = $_POST['autores'];
         $anio = $_POST['anio'];
@@ -58,17 +66,20 @@ class LibrosController{
     }
 
     public function deleteLibro($id){
+        $this -> checkAdmin();
         $this -> model -> delete($id);
         header("Location: " . BASE_URL);
     }
     
     public function showFormEdit($id){
+        $this -> checkAdmin();
         $generos = $this -> genModel -> getAll();
         $libro = $this -> model -> getLibroInd($id);
         $this -> view -> showFormEdit($libro, $generos);
     }
 
     public function editLibro(){
+        $this -> checkAdmin();
         $titulo = $_POST['titulo'];
         $autores = $_POST['autores'];
         $anio = $_POST['anio'];

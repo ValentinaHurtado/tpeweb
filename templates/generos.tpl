@@ -1,4 +1,11 @@
 {include file='gral/header.tpl'}
+
+{if $error} 
+        <div class="alert alert-danger">
+            {$error}
+        </div>
+{/if}
+
 <table class="table table-striped-columns">
     <thead class="text-center">
         <th>Genero</th>
